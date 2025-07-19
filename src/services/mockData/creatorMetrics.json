@@ -1,0 +1,48 @@
+{
+  "creatorId": "creator-123",
+  "totalEarnings": 8543.75,
+  "productsTagged": 247,
+  "conversionRate": 0.068,
+  "topProducts": [
+    {
+      "Id": 1,
+      "name": "Designer Handbag",
+      "price": 299.99,
+      "imageUrl": "/api/placeholder/300/300",
+      "retailer": "Luxury Fashion Co.",
+      "category": "Fashion",
+      "inStock": true,
+      "videoTimestamp": 45
+    },
+    {
+      "Id": 4,
+      "name": "Wireless Earbuds Pro",
+      "price": 199.99,
+      "imageUrl": "/api/placeholder/300/300",
+      "retailer": "TechStore",
+      "category": "Tech",
+      "inStock": true,
+      "videoTimestamp": 60
+    },
+    {
+      "Id": 10,
+      "name": "Vitamin C Serum",
+      "price": 45.99,
+      "imageUrl": "/api/placeholder/300/300",
+      "retailer": "SkinCare Pro",
+      "category": "Beauty",
+      "inStock": true,
+      "videoTimestamp": 90
+    },
+    {
+      "Id": 13,
+      "name": "Gaming Mechanical Keyboard",
+      "price": 159.99,
+      "imageUrl": "/api/placeholder/300/300",
+      "retailer": "Gaming Gear",
+      "category": "Gaming",
+      "inStock": true,
+      "videoTimestamp": 120
+    }
+  ]
+}

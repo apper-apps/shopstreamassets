@@ -1,0 +1,266 @@
+[
+  {
+    "Id": 1,
+    "title": "Fashion Haul 2024: Trending Styles You Need",
+    "creatorName": "StyleInfluencer",
+    "platform": "youtube",
+    "thumbnailUrl": "/api/placeholder/400/300",
+    "videoUrl": "/api/placeholder/video/fashion-haul",
+    "duration": "12:34",
+    "views": "2.1M views",
+    "uploadDate": "2 days ago",
+    "description": "Check out the latest fashion trends for 2024 featuring amazing pieces you can shop instantly!",
+    "products": [
+      {
+        "Id": 1,
+        "name": "Designer Handbag",
+        "price": 299.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Luxury Fashion Co.",
+        "category": "Fashion",
+        "inStock": true,
+        "videoTimestamp": 45
+      },
+      {
+        "Id": 2,
+        "name": "Silk Scarf",
+        "price": 89.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Elegant Accessories",
+        "category": "Fashion",
+        "inStock": true,
+        "videoTimestamp": 120
+      },
+      {
+        "Id": 3,
+        "name": "High-End Sunglasses",
+        "price": 249.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Optic Luxury",
+        "category": "Fashion",
+        "inStock": false,
+        "videoTimestamp": 200
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "title": "Latest Tech Review: Must-Have Gadgets",
+    "creatorName": "TechReviewer",
+    "platform": "youtube",
+    "thumbnailUrl": "/api/placeholder/400/300",
+    "videoUrl": "/api/placeholder/video/tech-review",
+    "duration": "15:22",
+    "views": "1.8M views",
+    "uploadDate": "1 week ago",
+    "description": "Reviewing the latest tech gadgets that are revolutionizing our daily lives.",
+    "products": [
+      {
+        "Id": 4,
+        "name": "Wireless Earbuds Pro",
+        "price": 199.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "TechStore",
+        "category": "Tech",
+        "inStock": true,
+        "videoTimestamp": 60
+      },
+      {
+        "Id": 5,
+        "name": "Smart Watch Series X",
+        "price": 399.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "WearableTech",
+        "category": "Tech",
+        "inStock": true,
+        "videoTimestamp": 180
+      },
+      {
+        "Id": 6,
+        "name": "Portable Charger 20K",
+        "price": 49.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "PowerGadgets",
+        "category": "Tech",
+        "inStock": true,
+        "videoTimestamp": 300
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "title": "Home Makeover: Budget-Friendly Decor",
+    "creatorName": "HomeDesigner",
+    "platform": "instagram",
+    "thumbnailUrl": "/api/placeholder/400/300",
+    "videoUrl": "/api/placeholder/video/home-decor",
+    "duration": "8:45",
+    "views": "956K views",
+    "uploadDate": "3 days ago",
+    "description": "Transform your space with these affordable home decor pieces that make a big impact.",
+    "products": [
+      {
+        "Id": 7,
+        "name": "Ceramic Vase Set",
+        "price": 79.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Home Decor Plus",
+        "category": "Home",
+        "inStock": true,
+        "videoTimestamp": 30
+      },
+      {
+        "Id": 8,
+        "name": "Modern Table Lamp",
+        "price": 129.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Lighting World",
+        "category": "Home",
+        "inStock": true,
+        "videoTimestamp": 150
+      },
+      {
+        "Id": 9,
+        "name": "Throw Pillow Collection",
+        "price": 39.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Comfort Living",
+        "category": "Home",
+        "inStock": true,
+        "videoTimestamp": 210
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "title": "Beauty Routine: Glowing Skin Secrets",
+    "creatorName": "BeautyGuru",
+    "platform": "tiktok",
+    "thumbnailUrl": "/api/placeholder/400/300",
+    "videoUrl": "/api/placeholder/video/beauty-routine",
+    "duration": "6:12",
+    "views": "3.2M views",
+    "uploadDate": "5 days ago",
+    "description": "My complete skincare routine for achieving that perfect glow.",
+    "products": [
+      {
+        "Id": 10,
+        "name": "Vitamin C Serum",
+        "price": 45.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "SkinCare Pro",
+        "category": "Beauty",
+        "inStock": true,
+        "videoTimestamp": 90
+      },
+      {
+        "Id": 11,
+        "name": "Hydrating Face Mask",
+        "price": 24.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Beauty Essentials",
+        "category": "Beauty",
+        "inStock": true,
+        "videoTimestamp": 180
+      },
+      {
+        "Id": 12,
+        "name": "Glow Moisturizer",
+        "price": 32.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Radiant Skin",
+        "category": "Beauty",
+        "inStock": false,
+        "videoTimestamp": 240
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "title": "Gaming Setup Tour: Pro Equipment",
+    "creatorName": "GamerPro",
+    "platform": "youtube",
+    "thumbnailUrl": "/api/placeholder/400/300",
+    "videoUrl": "/api/placeholder/video/gaming-setup",
+    "duration": "18:30",
+    "views": "1.5M views",
+    "uploadDate": "1 day ago",
+    "description": "Take a tour of my complete gaming setup with all the gear that makes me competitive.",
+    "products": [
+      {
+        "Id": 13,
+        "name": "Gaming Mechanical Keyboard",
+        "price": 159.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Gaming Gear",
+        "category": "Gaming",
+        "inStock": true,
+        "videoTimestamp": 120
+      },
+      {
+        "Id": 14,
+        "name": "RGB Gaming Mouse",
+        "price": 89.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Pro Gaming",
+        "category": "Gaming",
+        "inStock": true,
+        "videoTimestamp": 240
+      },
+      {
+        "Id": 15,
+        "name": "4K Gaming Monitor",
+        "price": 599.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Display Tech",
+        "category": "Gaming",
+        "inStock": true,
+        "videoTimestamp": 360
+      }
+    ]
+  },
+  {
+    "Id": 6,
+    "title": "Fitness Journey: Essential Workout Gear",
+    "creatorName": "FitnessMentor",
+    "platform": "instagram",
+    "thumbnailUrl": "/api/placeholder/400/300",
+    "videoUrl": "/api/placeholder/video/fitness-gear",
+    "duration": "10:15",
+    "views": "847K views",
+    "uploadDate": "4 days ago",
+    "description": "Everything you need to start your fitness journey from home.",
+    "products": [
+      {
+        "Id": 16,
+        "name": "Resistance Band Set",
+        "price": 34.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Fitness Pro",
+        "category": "Sports",
+        "inStock": true,
+        "videoTimestamp": 60
+      },
+      {
+        "Id": 17,
+        "name": "Yoga Mat Premium",
+        "price": 49.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Wellness Store",
+        "category": "Sports",
+        "inStock": true,
+        "videoTimestamp": 180
+      },
+      {
+        "Id": 18,
+        "name": "Adjustable Dumbbells",
+        "price": 199.99,
+        "imageUrl": "/api/placeholder/300/300",
+        "retailer": "Home Gym",
+        "category": "Sports",
+        "inStock": false,
+        "videoTimestamp": 300
+      }
+    ]
+  }
+]
