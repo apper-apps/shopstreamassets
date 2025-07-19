@@ -51,8 +51,41 @@ export const searchProducts = async (query) => {
   return products.filter(product =>
     product.name.toLowerCase().includes(searchTerm) ||
     product.category.toLowerCase().includes(searchTerm) ||
-    product.retailer.toLowerCase().includes(searchTerm)
+    product.retailer.toLowerCase().includes(searchTerm) ||
+    product.brand?.toLowerCase().includes(searchTerm)
   );
+};
+
+export const getProductsByBrand = async (brand) => {
+  await delay(300);
+  const products = getAllProducts();
+  return products.filter(product => 
+    product.brand?.toLowerCase() === brand.toLowerCase()
+  );
+};
+
+export const getBrandAnalytics = async () => {
+  await delay(200);
+  const products = getAllProducts();
+  const brandStats = {};
+  
+  products.forEach(product => {
+    if (product.brand) {
+      if (!brandStats[product.brand]) {
+        brandStats[product.brand] = {
+          productCount: 0,
+          avgConfidence: 0,
+          totalConfidence: 0
+        };
+      }
+      brandStats[product.brand].productCount++;
+      brandStats[product.brand].totalConfidence += product.brandConfidence || 0;
+      brandStats[product.brand].avgConfidence = 
+        (brandStats[product.brand].totalConfidence / brandStats[product.brand].productCount).toFixed(1);
+    }
+  });
+  
+  return brandStats;
 };
 
 export const getProductsByVideo = async (videoId) => {

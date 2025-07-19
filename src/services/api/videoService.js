@@ -5,7 +5,15 @@ const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const getVideos = async () => {
   await delay(300);
-  return [...videosData];
+  // Enhance videos with brand analysis metadata
+  return videosData.map(video => ({
+    ...video,
+    brandAnalysisComplete: true,
+    detectedBrands: [...new Set(video.products.map(p => p.brand))].length,
+    avgBrandConfidence: video.products.length > 0 
+      ? (video.products.reduce((sum, p) => sum + (p.brandConfidence || 0), 0) / video.products.length).toFixed(1)
+      : 0
+  }));
 };
 
 export const getVideoById = async (Id) => {
@@ -14,7 +22,18 @@ export const getVideoById = async (Id) => {
   if (!video) {
     throw new Error("Video not found");
   }
-  return { ...video };
+  
+  // Simulate brand analysis enhancement
+  const enhancedVideo = {
+    ...video,
+    brandAnalysisComplete: true,
+    detectedBrands: [...new Set(video.products.map(p => p.brand))].length,
+    avgBrandConfidence: video.products.length > 0 
+      ? (video.products.reduce((sum, p) => sum + (p.brandConfidence || 0), 0) / video.products.length).toFixed(1)
+      : 0
+  };
+  
+  return enhancedVideo;
 };
 
 export const getVideosByCategory = async (category) => {
@@ -36,7 +55,9 @@ export const searchVideos = async (query, filters = []) => {
       video.title.toLowerCase().includes(searchTerm) ||
       video.creatorName.toLowerCase().includes(searchTerm) ||
       video.products.some(product => 
-        product.name.toLowerCase().includes(searchTerm)
+        product.name.toLowerCase().includes(searchTerm) ||
+        product.brand?.toLowerCase().includes(searchTerm) ||
+        product.retailer.toLowerCase().includes(searchTerm)
       )
     );
   }
@@ -44,12 +65,21 @@ export const searchVideos = async (query, filters = []) => {
   if (filters.length > 0) {
     results = results.filter(video =>
       video.products.some(product =>
-        filters.includes(product.category)
+        filters.includes(product.category) ||
+        filters.includes(product.brand)
       )
     );
   }
   
-  return results;
+  // Add brand analysis metadata to results
+  return results.map(video => ({
+    ...video,
+    brandAnalysisComplete: true,
+    detectedBrands: [...new Set(video.products.map(p => p.brand))].length,
+    avgBrandConfidence: video.products.length > 0 
+      ? (video.products.reduce((sum, p) => sum + (p.brandConfidence || 0), 0) / video.products.length).toFixed(1)
+      : 0
+  }));
 };
 
 export const getTrendingVideos = async () => {

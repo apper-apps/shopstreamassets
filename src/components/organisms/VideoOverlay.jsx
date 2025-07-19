@@ -18,21 +18,43 @@ const VideoOverlay = ({
   const [isAnalyzing, setIsAnalyzing] = useState(true);
   const [detectedProducts, setDetectedProducts] = useState([]);
 
-  // Simulate AI analysis
+// Simulate enhanced AI analysis with brand recognition
   useEffect(() => {
     if (videoData) {
       setIsAnalyzing(true);
-      const timer = setTimeout(() => {
-        setDetectedProducts(videoData.products || []);
-        setIsAnalyzing(false);
-        if (videoData.products?.length > 0) {
-          toast.success(`Found ${videoData.products.length} products in this video!`, {
-            icon: "🎯"
-          });
+      
+      // Multi-stage brand-aware AI analysis
+      const analysisStages = [
+        { message: "Scanning video frames...", delay: 800 },
+        { message: "Detecting product shapes...", delay: 600 },
+        { message: "Analyzing brand logos and text...", delay: 700 },
+        { message: "Cross-referencing brand database...", delay: 500 },
+        { message: "Calculating confidence scores...", delay: 400 }
+      ];
+      
+      let currentStage = 0;
+      const stageTimer = setInterval(() => {
+        if (currentStage < analysisStages.length - 1) {
+          currentStage++;
+        } else {
+          clearInterval(stageTimer);
+          setDetectedProducts(videoData.products || []);
+          setIsAnalyzing(false);
+          
+          if (videoData.products?.length > 0) {
+            const brands = [...new Set(videoData.products.map(p => p.brand))];
+            const avgConfidence = (videoData.products.reduce((sum, p) => sum + (p.brandConfidence || 0), 0) / videoData.products.length).toFixed(1);
+            
+            toast.success(`Detected ${videoData.products.length} products from ${brands.length} brands with ${avgConfidence}% confidence!`, {
+              icon: "🔍"
+            });
+          }
         }
-      }, 2000);
+      }, analysisStages[currentStage]?.delay || 500);
 
-      return () => clearTimeout(timer);
+      return () => {
+        clearInterval(stageTimer);
+      };
     }
   }, [videoData]);
 
@@ -82,20 +104,30 @@ const VideoOverlay = ({
           platform={videoData.platform}
         />
 
-        {/* AI Analysis Status */}
+{/* Enhanced AI Analysis Status */}
         <AnimatePresence>
           {isAnalyzing && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white rounded-xl p-4 flex items-center space-x-3"
+              className="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm text-white rounded-xl p-4 flex items-center space-x-3 min-w-[300px]"
             >
-              <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-              <div>
-                <p className="font-semibold font-display">AI Analysis in Progress</p>
-                <p className="text-sm text-gray-300 font-body">Detecting products in video...</p>
+              <div className="relative">
+                <div className="w-8 h-8 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                <div className="absolute inset-0 w-8 h-8 border border-purple-400 rounded-full animate-pulse"></div>
               </div>
+              <div className="flex-1">
+                <p className="font-semibold font-display text-sm">Brand-Aware AI Analysis</p>
+                <p className="text-xs text-gray-300 font-body">Advanced product & brand recognition...</p>
+                <div className="mt-2 w-full bg-gray-700 rounded-full h-1.5">
+                  <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-1.5 rounded-full animate-pulse" style={{width: '65%'}}></div>
+                </div>
+              </div>
+              <Badge variant="primary" size="sm">
+                <ApperIcon name="Zap" size={12} className="mr-1" />
+                AI+
+              </Badge>
             </motion.div>
           )}
         </AnimatePresence>

@@ -11,36 +11,57 @@
     "uploadDate": "2 days ago",
     "description": "Check out the latest fashion trends for 2024 featuring amazing pieces you can shop instantly!",
     "products": [
-      {
-        "Id": 1,
+"Id": 1,
         "name": "Designer Handbag",
+        "brand": "Gucci",
+        "brandConfidence": 94,
         "price": 299.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Luxury Fashion Co.",
         "category": "Fashion",
         "inStock": true,
-        "videoTimestamp": 45
+        "videoTimestamp": 45,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "GUCCI",
+          "shapeAnalysis": "high_confidence"
+        }
       },
       {
-        "Id": 2,
+"Id": 2,
         "name": "Silk Scarf",
+        "brand": "Hermès",
+        "brandConfidence": 87,
         "price": 89.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Elegant Accessories",
         "category": "Fashion",
         "inStock": true,
-        "videoTimestamp": 120
+        "videoTimestamp": 120,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "HERMÈS",
+          "patternAnalysis": "signature_design"
+        }
       },
       {
-        "Id": 3,
+"Id": 3,
         "name": "High-End Sunglasses",
+        "brand": "Ray-Ban",
+        "brandConfidence": 91,
         "price": 249.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Optic Luxury",
         "category": "Fashion",
         "inStock": false,
-        "videoTimestamp": 200
+        "videoTimestamp": 200,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "RAY-BAN",
+          "frameAnalysis": "aviator_style"
+        }
       }
+    ]
     ]
   },
   {
@@ -55,36 +76,57 @@
     "uploadDate": "1 week ago",
     "description": "Reviewing the latest tech gadgets that are revolutionizing our daily lives.",
     "products": [
-      {
-        "Id": 4,
+"Id": 4,
         "name": "Wireless Earbuds Pro",
+        "brand": "Apple",
+        "brandConfidence": 96,
         "price": 199.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "TechStore",
         "category": "Tech",
         "inStock": true,
-        "videoTimestamp": 60
+        "videoTimestamp": 60,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "AirPods",
+          "shapeAnalysis": "distinctive_design"
+        }
       },
       {
-        "Id": 5,
+"Id": 5,
         "name": "Smart Watch Series X",
+        "brand": "Apple",
+        "brandConfidence": 98,
         "price": 399.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "WearableTech",
         "category": "Tech",
         "inStock": true,
-        "videoTimestamp": 180
+        "videoTimestamp": 180,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "Apple Watch",
+          "interfaceAnalysis": "watchOS_detected"
+        }
       },
       {
-        "Id": 6,
+"Id": 6,
         "name": "Portable Charger 20K",
+        "brand": "Anker",
+        "brandConfidence": 89,
         "price": 49.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "PowerGadgets",
         "category": "Tech",
         "inStock": true,
-        "videoTimestamp": 300
+        "videoTimestamp": 300,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "ANKER",
+          "productCodeAnalysis": "PowerCore_series"
+        }
       }
+    ]
     ]
   },
   {
@@ -99,36 +141,57 @@
     "uploadDate": "3 days ago",
     "description": "Transform your space with these affordable home decor pieces that make a big impact.",
     "products": [
-      {
-        "Id": 7,
+"Id": 7,
         "name": "Ceramic Vase Set",
+        "brand": "West Elm",
+        "brandConfidence": 82,
         "price": 79.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Home Decor Plus",
         "category": "Home",
         "inStock": true,
-        "videoTimestamp": 30
+        "videoTimestamp": 30,
+        "brandDetectionMetadata": {
+          "logoDetected": false,
+          "styleAnalysis": "modern_ceramic",
+          "colorPatternMatch": "brand_signature"
+        }
       },
       {
         "Id": 8,
         "name": "Modern Table Lamp",
+        "brand": "IKEA",
+        "brandConfidence": 76,
         "price": 129.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Lighting World",
         "category": "Home",
         "inStock": true,
-        "videoTimestamp": 150
+        "videoTimestamp": 150,
+        "brandDetectionMetadata": {
+          "logoDetected": false,
+          "designAnalysis": "scandinavian_style",
+          "materialMatch": "typical_ikea"
+        }
       },
       {
         "Id": 9,
         "name": "Throw Pillow Collection",
+        "brand": "Pottery Barn",
+        "brandConfidence": 85,
         "price": 39.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Comfort Living",
         "category": "Home",
         "inStock": true,
-        "videoTimestamp": 210
+        "videoTimestamp": 210,
+        "brandDetectionMetadata": {
+          "logoDetected": false,
+          "fabricAnalysis": "premium_cotton",
+          "patternMatch": "signature_collection"
+        }
       }
+    ]
     ]
   },
   {
@@ -143,36 +206,57 @@
     "uploadDate": "5 days ago",
     "description": "My complete skincare routine for achieving that perfect glow.",
     "products": [
-      {
-        "Id": 10,
+"Id": 10,
         "name": "Vitamin C Serum",
+        "brand": "The Ordinary",
+        "brandConfidence": 93,
         "price": 45.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "SkinCare Pro",
         "category": "Beauty",
         "inStock": true,
-        "videoTimestamp": 90
+        "videoTimestamp": 90,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "THE ORDINARY",
+          "packagingAnalysis": "minimalist_design"
+        }
       },
       {
         "Id": 11,
         "name": "Hydrating Face Mask",
+        "brand": "Glow Recipe",
+        "brandConfidence": 88,
         "price": 24.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Beauty Essentials",
         "category": "Beauty",
         "inStock": true,
-        "videoTimestamp": 180
+        "videoTimestamp": 180,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "GLOW RECIPE",
+          "colorAnalysis": "brand_pink"
+        }
       },
       {
         "Id": 12,
         "name": "Glow Moisturizer",
+        "brand": "Fenty Beauty",
+        "brandConfidence": 91,
         "price": 32.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Radiant Skin",
         "category": "Beauty",
         "inStock": false,
-        "videoTimestamp": 240
+        "videoTimestamp": 240,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "FENTY",
+          "packagingAnalysis": "luxury_glass"
+        }
       }
+    ]
     ]
   },
   {
@@ -187,36 +271,57 @@
     "uploadDate": "1 day ago",
     "description": "Take a tour of my complete gaming setup with all the gear that makes me competitive.",
     "products": [
-      {
-        "Id": 13,
+"Id": 13,
         "name": "Gaming Mechanical Keyboard",
+        "brand": "Razer",
+        "brandConfidence": 95,
         "price": 159.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Gaming Gear",
         "category": "Gaming",
         "inStock": true,
-        "videoTimestamp": 120
+        "videoTimestamp": 120,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "RAZER",
+          "rgbAnalysis": "chroma_lighting"
+        }
       },
       {
         "Id": 14,
         "name": "RGB Gaming Mouse",
+        "brand": "Logitech",
+        "brandConfidence": 92,
         "price": 89.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Pro Gaming",
         "category": "Gaming",
         "inStock": true,
-        "videoTimestamp": 240
+        "videoTimestamp": 240,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "LOGITECH G",
+          "shapeAnalysis": "ergonomic_design"
+        }
       },
       {
         "Id": 15,
         "name": "4K Gaming Monitor",
+        "brand": "ASUS",
+        "brandConfidence": 89,
         "price": 599.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Display Tech",
         "category": "Gaming",
         "inStock": true,
-        "videoTimestamp": 360
+        "videoTimestamp": 360,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "ASUS ROG",
+          "bezelsAnalysis": "gaming_aesthetic"
+        }
       }
+    ]
     ]
   },
   {
@@ -231,36 +336,57 @@
     "uploadDate": "4 days ago",
     "description": "Everything you need to start your fitness journey from home.",
     "products": [
-      {
-        "Id": 16,
+"Id": 16,
         "name": "Resistance Band Set",
+        "brand": "TRX",
+        "brandConfidence": 86,
         "price": 34.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Fitness Pro",
         "category": "Sports",
         "inStock": true,
-        "videoTimestamp": 60
+        "videoTimestamp": 60,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "TRX",
+          "materialAnalysis": "professional_grade"
+        }
       },
       {
         "Id": 17,
         "name": "Yoga Mat Premium",
+        "brand": "Manduka",
+        "brandConfidence": 84,
         "price": 49.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Wellness Store",
         "category": "Sports",
         "inStock": true,
-        "videoTimestamp": 180
+        "videoTimestamp": 180,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "MANDUKA",
+          "thicknessAnalysis": "pro_series"
+        }
       },
       {
         "Id": 18,
         "name": "Adjustable Dumbbells",
+        "brand": "Bowflex",
+        "brandConfidence": 90,
         "price": 199.99,
         "imageUrl": "/api/placeholder/300/300",
         "retailer": "Home Gym",
         "category": "Sports",
         "inStock": false,
-        "videoTimestamp": 300
+        "videoTimestamp": 300,
+        "brandDetectionMetadata": {
+          "logoDetected": true,
+          "textRecognition": "BOWFLEX",
+          "mechanismAnalysis": "selecttech_system"
+        }
       }
+    ]
     ]
   }
 ]
